@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Running build for branch: ${BRANCH_NAME}"
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
     }
